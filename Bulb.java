@@ -2,6 +2,8 @@
 public class Bulb 
 {
 	private boolean lightOn;
+	private static final String LIGHT_ON_MSG = "The bulb is on";
+	private static final String LIGHT_OFF_MSG = "The bulb is off";
 	
 	public Bulb (boolean lightOn = false) 
 	{
@@ -21,14 +23,7 @@ public class Bulb
 
 	public void printStatus()
 	{
-		if	(lightSwitch)	
-		{
-			System.out.println("The bulb is on");	
-		}
-		else
-		{
-			System.out.println("The bulb is off");
-		}
+		lightSwitch ? System.out.println(LIGHT_ON_MSG) : System.out.println(LIGHT_OFF_MSG);
 	}
 	
 }
