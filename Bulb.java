@@ -1,13 +1,26 @@
 
 public class Bulb 
 {
+	private boolean lightOn;
 	
-	public boolean lightSwitch;
-	
-	public Bulb (boolean bulb) 
+	public Bulb (boolean lightOn = false) 
 	{
-		lightSwitch = bulb;
-		
+		this.lightOn = lightOn;
+		printStatus();
+	}
+
+	public void switchOn()
+	{
+		lightOn = true;
+	}
+
+	public void switchOff()
+	{
+		lightOff = false;
+	}
+
+	public void printStatus()
+	{
 		if	(lightSwitch == true)	
 		{
 			System.out.println("The bulb is on");	
