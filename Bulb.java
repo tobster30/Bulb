@@ -21,12 +21,11 @@ public class Bulb
 
 	public void printStatus()
 	{
-		if	(lightSwitch == true)	
+		if	(lightSwitch)	
 		{
 			System.out.println("The bulb is on");	
 		}
-			
-		else if (lightSwitch == false) 
+		else
 		{
 			System.out.println("The bulb is off");
 		}
